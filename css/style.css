@@ -36,3 +36,22 @@ li {
 .header-list-item {
     margin-right: 20px;
 }
+
+/* main共通 */
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* 自己紹介 */
+.introduction-table {
+    width: 100%;
+}
+
+.table-header {
+    background-color: #f0e68c;
+}
+
+.table-header-contents {
+    width: 30%;
+}
