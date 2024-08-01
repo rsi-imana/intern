@@ -16,3 +16,23 @@ li {
     margin: 0 auto;
     margin-bottom: 120px;
 }
+
+/* ヘッダー */
+#header {
+    background-color: cadetblue;
+}
+
+.header-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.header-list {
+    display: flex;
+}
+
+.header-list-item {
+    margin-right: 20px;
+}
