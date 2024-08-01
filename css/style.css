@@ -84,3 +84,10 @@ li {
     border: 1px solid black;
     border-radius:50px;
 }
+
+/* フッター */
+.footer {
+    padding: 20px 0;
+    background-color: cadetblue;
+    text-align: center;
+}
