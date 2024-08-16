@@ -10,6 +10,10 @@ li {
     list-style: none;
 }
 
+table, th, td {
+    border: 1px solid;
+}
+
 .common-wrapper {
     width: 100%;
     max-width: 1032px;
