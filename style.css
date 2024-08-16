@@ -59,3 +59,39 @@ table, th, td {
 .table-header-contents {
     width: 30%;
 }
+
+/* 趣味 */
+.hobby-outer {
+    display: flex;
+    gap: 10px;
+}
+
+.hobby-inner {
+    width: 100%;
+}
+
+/* 座右の銘 */
+.motto-text {
+    font-size: 70px;
+    text-shadow: 8px 1px #f4a460;
+    text-align: center;
+}
+
+/* お気に入り動画 */
+.button-outer {
+    text-align: center;
+}
+
+.button {
+    padding: 10px 50px;
+    background-color: #f0e68c;
+    border: 1px solid black;
+    border-radius:50px;
+}
+
+/* フッター */
+.footer {
+    padding: 20px 0;
+    background-color: cadetblue;
+    text-align: center;
+}
