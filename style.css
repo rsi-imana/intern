@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/* 共通 */
+a {
+    color: black;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+table, th, td {
+    border: 1px solid;
+}
+
+.common-wrapper {
+    width: 100%;
+    max-width: 1032px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
