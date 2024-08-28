@@ -18,3 +18,14 @@ function slideshow() {
     document.getElementById("slide-title").innerHTML = images[num].title;
 }
 setInterval(slideshow, 2000);
+
+// アコーディオンメニュー
+const accordionBtn = document.getElementsByClassName("menu");
+const content = document.getElementsByClassName("content");
+
+for (let i = 0; i < accordionBtn.length; i++) {
+    accordionBtn[i].addEventListener("click", function () {
+        accordionBtn[i].classList.toggle("is-active");
+        content[i].classList.toggle("is-open");
+    })
+}

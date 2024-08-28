@@ -144,6 +144,57 @@ ul {
     color: #f4a460;
 }
 
+/* アコーディオンメニュー */
+.accordion {
+    margin: 0 auto;
+    width: 500px;
+    height: auto;
+    border: 1px solid;
+    border-bottom: none;
+}
+
+.accordion-common {
+    border-bottom: 1px solid black;
+}
+
+.menu {
+    padding: 20px;
+    background-color: rgb(149, 191, 193);
+    position: relative;
+}
+
+.menu::after {
+    content: "＋";
+    position: absolute;
+    right: 10px;
+}
+
+.menu:hover,
+.menu.is-active {
+    color: #fff;
+    background-color: cadetblue;
+}
+
+.menu.is-active::after {
+    content: "－";
+    position: absolute;
+    right: 10px;
+}
+
+.content {
+    overflow: hidden;
+    height: 0;
+    background-color: rgb(238, 238, 238);
+    transition: all .25s ease;
+    text-align: center;
+}
+
+.content.is-open {
+    overflow: visible;
+    padding: 20px;
+    height: auto;
+}
+
 /* フッター */
 .footer {
     padding: 20px 0;
