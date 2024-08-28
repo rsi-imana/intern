@@ -262,6 +262,34 @@ ul {
     height: auto;
 }
 
+/* 入力した文字を表示する */
+.button-outer {
+    margin: 10px 0;
+}
+
+.input-box {
+    text-align: center;
+}
+
+.input-text {
+    width: 300px;
+    height: auto;
+    text-align: center;
+}
+
+.text-color {
+    font-size: 50px;
+    text-shadow: 2px 4px #f4a460;
+}
+
+
+/* 計算する */
+.calc-list-item {
+    width: 300px;
+    margin: 0 auto;
+    text-align: start;
+}
+
 /* フッター */
 .footer {
     padding: 20px 0;

@@ -91,6 +91,52 @@
                 </div>
             </form>
         </section>
+        <!-- 入力した文字を表示 -->
+        <section class="common-wrapper">
+            <h2 class="section-title">入力したメッセージを表示する</h2>
+            <div class="input-box">
+                <input class="input-text" type="text" id="input-text" value="" placeholder="文字を入力して下さい">
+                <div class="button-outer">
+                    <button class="button" onclick="displayText()">PUSH</button>
+                </div>
+                <p>ここに表示されます↓</p>
+                <p id="show-message"></p>
+            </div>
+        </section>
+        <!-- 計算する -->
+        <section class="common-wrapper">
+            <h2 class="section-title">計算する（足し算）</h2>
+            <div class="input-box">
+                <input type="text" id="input-number01" value="" placeholder="数字１">
+                <input type="text" id="input-number02" value="" placeholder="数字２">
+                <h3>以下から計算方法を選択して下さい</h3>
+                <ul>
+                    <li class="calc-list-item">
+                        <label for="add"><input type="radio" name="calc" id="add" value="add" checked>足し算</label>
+                    </li>
+                    <li class="calc-list-item">
+                        <label for="sub"><input type="radio" name="calc" id="sub" value="sub">引き算</label>
+                    </li>
+                    <li class="calc-list-item">
+                        <label for="mul"><input type="radio" name="calc" id="mul" value="mul">掛け算</label>
+                    </li>
+                    <li class="calc-list-item">
+                        <label for="div"><input type="radio" name="calc" id="div" value="div">割り算（小数点第三位を四捨五入）</label>
+                    </li>
+                </ul>
+                <div class="button-outer">
+                    <button class="button" onclick="calculate()">計算</button>
+                </div>
+                <p>計算結果：<span id="output-text"></span></p>
+            </div>
+        </section>
+        <!-- JavaScriptで画面遷移 -->
+        <section class="common-wrapper">
+            <h2 class="section-title">JavaScriptで画面遷移</h2>
+            <div class="button-outer">
+                <button type="button" class="button back-button" onclick="move()">BACK</button>
+            </div>
+        </section>
     </main>
 
     <footer>

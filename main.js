@@ -54,3 +54,57 @@ document.getElementById("sample-form").addEventListener("submit", function (e) {
         e.preventDefault();
     }
 });
+
+// ボタンを押すと文字を表示
+function displayText() {
+    let inputText = document.getElementById("input-text").value;
+    const showMessage = document.getElementById("show-message");
+    console.log(inputText);
+    if (inputText) {
+        showMessage.innerHTML = inputText;
+        showMessage.className = "text-color";
+    } else {
+        showMessage.innerHTML = "文字が入力されていません。";
+        showMessage.className = "error"
+    }
+}
+
+// ボタンを押すと計算する
+function calculate() {
+    let num01 = parseInt(document.getElementById("input-number01").value);
+    let num02 = parseInt(document.getElementById("input-number02").value);
+    let calcRadio = document.getElementsByName("calc");
+    let calc = "";
+    let result = "";
+    const outputText = document.getElementById("output-text");
+
+
+    if (isNaN(num01) || isNaN(num02)) {
+        outputText.innerHTML = "数字が入力されていません。";
+        outputText.className = "error";
+    } else {
+        for (let i = 0; i < calcRadio.length; i++) {
+            if (calcRadio.item(i).checked) {
+                console.log("チェックされているのは" + calcRadio.item(i).value);
+                calc = calcRadio.item(i).value;
+                if (calc == "add") {
+                    result = (num01 + num02);
+                } else if (calc == "sub") {
+                    result = (num01 - num02);
+                } else if (calc == "mul") {
+                    result = (num01 * num02);
+                } else {
+                    result = (num01 / num02).toFixed(2);
+                }
+            }
+        }
+        outputText.innerHTML = result;
+        outputText.classList = "text-color";
+    }
+
+}
+
+// 戻るボタン
+function move() {
+    location.href = "index.html";
+}
