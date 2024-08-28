@@ -29,3 +29,28 @@ for (let i = 0; i < accordionBtn.length; i++) {
         content[i].classList.toggle("is-open");
     })
 }
+
+// バリデーションチェック
+document.getElementById("sample-form").addEventListener("submit", function (e) {
+    // フォームが持つデフォルトの動作は「フォーム内容を指定した送信先へ送る」。
+    // e.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    const nameError = document.getElementById("name-error");
+    const emailError = document.getElementById("email-error");
+
+    if (!name && !email) {
+        nameError.innerHTML = "名前を入力してください";
+        emailError.innerHTML = "メールアドレスを入力してください";
+        e.preventDefault();
+    } else if (!name) {
+        nameError.innerHTML = "名前を入力してください";
+        emailError.innerHTML = "";
+        e.preventDefault();
+    } else if (!email) {
+        emailError.innerHTML = "メールアドレスを入力してください";
+        nameError.innerHTML = "";
+        e.preventDefault();
+    }
+});

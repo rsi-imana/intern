@@ -195,6 +195,73 @@ ul {
     height: auto;
 }
 
+/* バリデーションチェック */
+.error {
+    font-size: 16px;
+    color: red;
+}
+
+.sample-form {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.form-title {
+    text-align: center;
+}
+
+.form-content {
+    margin: 20px 0;
+}
+
+.form-label {
+    display: block;
+}
+
+.form-label+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+#message {
+    resize: none;
+    width: 100%;
+    height: 250px;
+}
+
+.form-button {
+    text-align: center;
+}
+
+.form-required {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: #f4a460;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    padding: 2px 0;
+    margin-right: 5px;
+}
+
+/* 送信完了 */
+.success-outer {
+    text-align: center;
+}
+
+.success-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.success-image {
+    width: 250px;
+    height: auto;
+}
+
 /* フッター */
 .footer {
     padding: 20px 0;

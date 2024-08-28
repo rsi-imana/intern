@@ -67,6 +67,30 @@
                 </li>
             </ul>
         </section>
+        <!-- バリデーションチェック -->
+        <section class="common-wrapper">
+            <h2 class="section-title">バリデーションチェック</h2>
+            <form action="success.html" class="sample-form" id="sample-form">
+                <h3 class="form-title">お問い合わせフォーム</h3>
+                <div class="form-content">
+                    <label class="form-label" for="name"><span class="form-required">必須</span>お名前</label>
+                    <p id="name-error" class="error"></p>
+                    <input id="name" type="text" name="name" placeholder="例）山田太郎">
+                </div>
+                <div class="form-content">
+                    <label class="form-label" for="email"><span class="form-required">必須</span>メールアドレス</label>
+                    <p id="email-error" class="error"></p>
+                    <input id="email" type="email" name="email" placeholder="例）example@gmail.com">
+                </div>
+                <div class="form-content">
+                    <label class="form-label" for="message"><span class="form-required">必須</span>お問い合わせ内容</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <div class="form-content form-button">
+                    <input class="button" type="submit" value="SUBMIT">
+                </div>
+            </form>
+        </section>
     </main>
 
     <footer>
