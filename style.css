@@ -282,12 +282,34 @@ ul {
     text-shadow: 2px 4px #f4a460;
 }
 
-
 /* 計算する */
 .calc-list-item {
     width: 300px;
     margin: 0 auto;
     text-align: start;
+}
+
+/* Topへ */
+#top-btn {
+    background-color: #f4a460;
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 50%;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+
+    opacity: 0;
+}
+
+#top-btn:hover {
+    background-color: #fff;
+    color: #f4a460;
+    box-shadow: 0 0 20px #f4a460;
 }
 
 /* フッター */

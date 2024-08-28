@@ -108,3 +108,19 @@ function calculate() {
 function move() {
     location.href = "index.html";
 }
+
+// TOPへボタン
+const topBtn = document.getElementById("top-btn");
+    // 押されたら上に行く
+topBtn.addEventListener("click", function () {
+    window.scroll({ top: 0, behavior: "smooth" });
+})
+    // 画面がスクロールされたらボタンを表示
+window.addEventListener("scroll", function () {
+    // console.log("スクロール量を取得：" + window.scrollY);
+    if (window.scrollY > 100) {
+        topBtn.style.opacity = "1";
+    } else if (window.scrollY < 100) {
+        topBtn.style.opacity = "0";
+    }
+})
