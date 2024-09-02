@@ -117,10 +117,8 @@ ul {
     position: relative;
 }
 
-.forward-button::after {
-    content: ">";
-    position: absolute;
-    right: 15px;
+.forward-button {
+    text-decoration: underline;
 }
 
 .back-button::before {
